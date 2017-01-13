@@ -1,0 +1,159 @@
+body {
+    background: rgb(225, 225, 225);
+}
+
+.gameboard{
+    position: relative;
+    height: 600px;
+    width: 600px;
+   background: #272822;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.pieceboard{
+    background: pink;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    height: 500px;
+    width: 500px;
+    top: 50px;
+    border-radius: 50%;
+}
+
+.separator {
+   width: 600px;
+   height: 600px;
+   display: block;
+   margin: 0 auto;
+   position: relative;
+}
+
+.separator:before, .separator:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  background: #272822;
+  overflow: visible;
+}
+
+.separator:before {
+  left: 54%;
+  width: 30px;
+  margin-left: -15%;
+  height: 100%;
+  margin-top: -50px;
+}
+
+.separator:after {
+  top: 50%;
+  height: 30px;
+  margin-top: -10%;
+  margin-left: -50px;
+  width: 100%;
+}
+
+.console-rim {
+    position: absolute;
+    top: 125px;
+    left: 125px;
+    z-index: 2;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+background: #272822;
+}
+
+.console {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgb(189, 189, 189);
+}
+
+.play {
+    width: 300px;
+    height: 300px;
+    /*margin: 75px 30px;*/
+}
+
+#green, #red, #yellow, #blue {
+    position: absolute;
+    background: rgb(142, 142, 142);
+}
+
+#green {
+    left: -50px;
+    top: -50px;
+}
+
+#red {
+    left: 250px;
+    top: -50px;
+}
+
+#yellow {
+    left: -50px;
+    bottom: -50px;
+}
+
+#blue {
+    left: 250px;
+    bottom: -50px;
+}
+
+.title {
+    padding-top: 10px;
+    margin-left: 50px;
+}
+
+.btn-circle {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 16px;
+  line-height: 1.428571429;
+  border-radius: 50%;
+}
+
+.level-indicator {
+    position: absolute;
+    margin-left: 40px;
+    width: 48px;
+    height: 60px;
+    background: rgb(178,8,8);
+    background: rgba(178, 8, 8, 0.5);
+    font-size: 42px;
+    font-weight: bold;
+    color: rgb(35, 22, 22);
+}
+
+.startgame-body {
+    margin-left: 105px;
+    margin-top: -8px;
+}
+
+.strict-game {
+    margin-left: 125px;
+}
+
+.notify {
+    position: relative;
+    width: 350px;
+    height: 25px;
+    display: none;
+    margin: 0 auto;
+    margin-bottom: -15px;
+    text-align: center;
+    background: rgb(106, 169, 237);
+    font-size: 20px;
+}
